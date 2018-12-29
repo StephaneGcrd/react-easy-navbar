@@ -1,6 +1,7 @@
 {
   "name": "react-easy-navbar",
-  "version": "0.1.0",
+  "version": "0.1.11",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build-examples": "react-scripts build",
