@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+.nav-header{
+    font-family: 'Open Sans', sans-serif;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -20,7 +24,6 @@
 
 @media screen and (max-width: 768px) {
     .nav-header{
-        background: #ab47bc;
         height: 110px;
         display: flex;
         flex-direction: column-reverse;
@@ -39,7 +42,6 @@
     }
 
     .nav-header span{
-        color: white;
         font-weight: 500;
         font-size: 15px;
         margin: 0;
@@ -74,7 +76,6 @@
 
 @media screen and (min-width: 769px) {
     .nav-header{
-        background: #ab47bc;
         height: 80px;
         align-items: center;
         display: flex;
@@ -87,7 +88,6 @@
     }
 
     .nav-header span{
-        color: white;
         font-weight: 500;
         font-size: 15px;
         margin: 0;
@@ -128,12 +128,10 @@
 
 
 .navbar-brand-text{
-    color:#ab47bc;
+
     font-weight: 900;
     padding: 0 3px;
     font-size: 25px;
-    font-style: italic;
-    background: white;
 }
 
 .easy-nav-dropdown{
@@ -142,7 +140,6 @@
 
 
   .dropdown-content a {
-    color: #ab47bc;
     padding: 12px 16px;
     font-size: 15px;
     font-weight: 500;
@@ -160,7 +157,6 @@
 
   .easy-nav-dropdown #svg-icon{
       width: 14px;
-      fill: white;
       margin: 3px 0 0 5px ;
       position: absolute;
       
