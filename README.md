@@ -30,10 +30,10 @@ props:
 |-----------------|-------------|
 | backgroundColor | hex only    |
 
-####NavlinksList
+#### NavlinksList
 Component that wrap the Navlinks
 
-####Navlink
+#### Navlink
 For a simple Navigation button. Should be inside
 `<NavlinksList>`
 
@@ -42,7 +42,7 @@ props :
 | text | Text placeholder for the button |
 |------|---------------------------------|
 
-####NavlinkDropdown
+#### NavlinkDropdown
 Component for a dropdown menu. Should be inside
 `<NavlinksList>`
 
@@ -51,11 +51,11 @@ props :
 | text | Text placeholder for the button |
 |------|---------------------------------|
 
-####NavlinkDropdownElement
+#### NavlinkDropdownElement
 
 Dropdown element, should be inside `<NavlinkDropdown>`
 
-####Logo
+#### Logo
 For text logo. Will be at right if placed before NavlinksList and vice-versa.
 
 props :
