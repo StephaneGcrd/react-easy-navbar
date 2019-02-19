@@ -21,7 +21,7 @@ import {
 
 ### Components
 
-####Navbar 
+#### Navbar 
 Mother component for initializing the Navbar
 
 props:
