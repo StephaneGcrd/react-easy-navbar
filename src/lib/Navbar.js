@@ -1,33 +1,25 @@
-import React, { Component } from 'react'
-import './Navbar.css';
+import React, { useState, useEffect } from "react";
+import "./Navbar.css";
 
+const StyleContext = React.createContext();
 
-const StyleContext = React.createContext(); 
+const Navbar = props => {
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [color, setColor] = useState("");
 
-export class Navbar extends Component {
-  state = {
-    backgroundColor: "#ab47bc"
-  }
+  useEffect(() => {
+    setBackgroundColor("#AAAAAA");
+    setColor("#000000");
+  });
 
-  componentWillMount() {
-    this.setState({
-      backgroundColor: this.props.backgroundColor,
-      color: this.props.textColor
-    })
-  }
-
-  render() {
-    return (
-     
-      <StyleContext.Provider value={this.state}>
-       <div className="nav-header" style={this.state}>
-            {this.props.children}
-        </div>
-      </StyleContext.Provider>
-
-    )
-  }
-}
+  return (
+    <StyleContext.Provider value={{ backgroundColor, color }}>
+      <div className="nav-header" style={{ backgroundColor, color }}>
+        {props.children}
+      </div>
+    </StyleContext.Provider>
+  );
+};
 
 export default Navbar;
 export const StyleContextConsumer = StyleContext.Consumer;
